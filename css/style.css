@@ -1,3 +1,5 @@
+/* Import Fonts */
+
 @font-face {
     font-family: 'CenturyGothic';
     src: url('../font/CenturyGothic.ttf') format('truetype');
@@ -14,9 +16,30 @@
     font-family: RoseAvenue;
 }
 
+/* Video and Pixel Overlay */
+
+video:after {
+    background: url("../assets/other/bg-pixel-20.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
 
 
 
+#video_element:after {
+    background: url("../assets/other/bg-pixel-20.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
 
 
 * {
@@ -33,6 +56,7 @@ html {
 }
 
 
+/* Homepage Logo */
 
 .mylogo .logo {
     width: 15%;
@@ -42,12 +66,7 @@ html {
     filter: drop-shadow(.1em .1em 0.1em black);
 }
 
-.logo:hover + .logogif {
-    display: block;
-    filter: drop-shadow(.1em .1em 0.1em black);
-    transition: filter 0.5s ease-in-out;
-}
-
+/* Nav Bar */
 
 .navbar {
     position: fixed;
@@ -140,11 +159,13 @@ html {
     color: #fff;
 }
 
-/*  Pre-loader */
+/*  Splash screen preloader */
 .animate__animated.animate__fadeInRight {
     --animate-duration: 4s;
     --animation-delay: 0.9s;
 }
+
+/* Responsiveness Media Queries */
 
 
 @media (max-width: 991px) {
