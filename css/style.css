@@ -1,0 +1,284 @@
+@font-face {
+    font-family: 'CenturyGothic';
+    src: url('../font/CenturyGothic.ttf') format('truetype');
+    src: url('../font/gothic.eot') format('eot'), ;
+    src: url('../font/gothic.woff') format('woff');
+}
+
+@font-face {
+    font-family: "RoseAvenue";
+    src: url(/font/RoseAvenue.ttf) format("truetype");
+}
+
+* {
+    font-family: RoseAvenue;
+}
+
+
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+body,
+html {
+    min-height: 1000px;
+    font-family: CenturyGothic;
+    font-weight: normal;
+}
+
+
+
+.mylogo .logo {
+    width: 15%;
+    float: right;
+    margin-right: 7%;
+    margin-top: 5%;
+    filter: drop-shadow(.1em .1em 0.1em black);
+}
+
+.logo:hover + .logogif {
+    display: block;
+    filter: drop-shadow(.1em .1em 0.1em black);
+    transition: filter 0.5s ease-in-out;
+}
+
+
+.navbar {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+    justify-content: right;
+    margin-right: 5%;
+}
+
+.navbar .navigations {
+    position: relative;
+    display: flex;
+    margin: 5% 0;
+}
+
+.navbar .navigations li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+.navbar .navigations li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+
+.navbar .navigations li a.active {
+    background-color: transparent;
+    font-weight: 600;
+    color: #FFF3B6;
+}
+
+.navbar .navigations li a:hover {
+    color: #FFF3B6;
+}
+
+.navigations li a::after {
+    content: "";
+    position: static;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #FFF3B6;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+
+.navigations li a:hover::after {
+    transform: scaleX(1);
+}
+
+.navbar .navigations li a:focus {
+    transform: none !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-toggler {
+    background: #fff;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.nav-link {
+    padding: .2rem 1rem;
+}
+
+.nav-link.active,
+.nav-link:focus {
+    color: #fff;
+}
+
+.navbar-toggler {
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+/*  Pre-loader */
+.animate__animated.animate__fadeInRight {
+    --animate-duration: 4s;
+    --animation-delay: 0.9s;
+}
+
+
+@media (max-width: 991px) {
+
+    .animate__fadeInRight {
+        animation-name: none;
+    }
+
+    .navbar {
+        position: fixed;
+        top: -92%;
+        margin-right: 2%;
+    }
+
+    .mylogo .logo {
+        position: fixed;
+        width: 20%;
+        float: left;
+        margin: 1% 5%;
+    }
+
+    .navbar .navigations {
+        display: none;
+    }
+
+    .menuToggle {
+        z-index: 99;
+        position: fixed;
+        right: 0;
+        top: 20px;
+        justify-content: right;
+        width: 100px;
+        height: 40px;
+        background: url('../assets/other/menuicon.png');
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+
+    }
+
+    .menuToggle.active {
+        background: url('../assets/other/close-icon.png');
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    .navbar .navigations.active {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #121116f8;
+        margin: 0;
+
+    }
+
+    .navbar .navigations li {
+        margin-left: 0;
+    }
+
+    .navbar .navigations li a {
+        color: #fff;
+        font-size: 1.2em;
+    }
+
+    .navigations .hr {
+        width: 80%;
+        color: #EDB60D;
+        border: 0.5px solid #FFF3B6;
+        margin: 3%;
+    }
+
+
+
+}
+
+@media (max-width: 600px) {
+    .mylogo .logo {
+        width: 40%;
+        float: left;
+        margin: 6% 6%;
+    }
+
+    .navbar {
+        float: right;
+        position: fixed;
+        top: -88%;
+        margin-right: -1%;
+    }
+
+    .navbar .navigations li {
+        margin-left: 0;
+    }
+
+    .navbar .navigations li a {
+        color: #fff;
+        font-size: 1em;
+
+    }
+
+    .navigations .hr {
+        width: 70%;
+        margin: 5%;
+    }
+
+    .menuToggle.active {
+        background-size: 20px;
+    }
+
+    .menuToggle {
+        width: 25px;
+        height: 30px;
+        background-size: 20px;
+        z-index: 9999;
+        position: fixed;
+        right: 0;
+        top: 20px;
+        justify-content: right;
+        margin-right: 5%;
+
+
+    }
+
+    .navbar .navigations li a.active {
+        font-weight: normal;
+
+    }
+
+}
