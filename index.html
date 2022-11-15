@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aslanidis Portfolio</title>
     <link rel="icon" href="./assets/other/favicon-32x32.ico" type="image/x-icon">
+    <!--
+     Loader 
+    <script type='text/javascript' src='./js/custom.js'></script>
+-->
+
 
     <!-- CSS for bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -20,14 +25,15 @@
 
 <body>
 
-    <!-- preloader still needs fixing -->
-    <div class="loader-bg">
-        <span class="loader"><span class="loader-inner"></span></span>
+    <!--
+     preloader still needs fixing 
+    <div id="loader"></div>
+-->
 
-    </div>
     <div>
         <div class="mylogo fixed-top">
-            <img class=" logo " src="./assets/other/NameLogo.png" alt="" srcset="">
+
+            <img class="logo" src="./assets/other/NameLogo.png" alt="" srcset="">
         </div>
 
         <!-- Nav Bar -->
@@ -40,9 +46,6 @@
                 <li><a class="active link" href="../index.html">Home</a></li>
                 <span class="hr"></span>
                 <li><a class=" link" href="./src/portfolio.html">Portfolio</a></li>
-                <span class="hr"></span>
-                <li><a class="link" href="./src/contact.html">Contact</a></li>
-
             </ul>
 
         </nav>
@@ -67,7 +70,7 @@
                 header.classList.toggle("sticky", window.scrollY > 0);
             });
 
-
+            // Responsive Hamburger Menu
             function toggleMenu() {
                 const menuToggle = document.querySelector('.menuToggle');
                 const navigations = document.querySelector('.navigations');
@@ -84,6 +87,7 @@
             }
 
         </script>
+    </div>
 </body>
 
 </html>

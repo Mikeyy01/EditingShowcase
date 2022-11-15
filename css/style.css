@@ -1,13 +1,6 @@
 /* Import Fonts */
 
 @font-face {
-    font-family: 'CenturyGothic';
-    src: url('../font/CenturyGothic.ttf') format('truetype');
-    src: url('../font/gothic.eot') format('eot'), ;
-    src: url('../font/gothic.woff') format('woff');
-}
-
-@font-face {
     font-family: "RoseAvenue";
     src: url(/font/RoseAvenue.ttf) format("truetype");
 }
@@ -15,6 +8,20 @@
 * {
     font-family: RoseAvenue;
 }
+
+
+/* Loader */
+
+#loader {
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow: visible;
+    background: #000 url('../assets/other/lgoo.gif') no-repeat center center;
+}
+
+
 
 /* Video and Pixel Overlay */
 
@@ -51,7 +58,6 @@ video:after {
 body,
 html {
     min-height: 1000px;
-    font-family: CenturyGothic;
     font-weight: normal;
 }
 
@@ -63,7 +69,7 @@ html {
     float: right;
     margin-right: 7%;
     margin-top: 5%;
-    filter: drop-shadow(.1em .1em 0.1em black);
+    filter: drop-shadow(.1em .1em 0.05em black);
 }
 
 /* Nav Bar */
@@ -159,11 +165,7 @@ html {
     color: #fff;
 }
 
-/*  Splash screen preloader */
-.animate__animated.animate__fadeInRight {
-    --animate-duration: 4s;
-    --animation-delay: 0.9s;
-}
+
 
 /* Responsiveness Media Queries */
 
@@ -182,6 +184,7 @@ html {
 
     .mylogo .logo {
         position: fixed;
+        top: 2%;
         width: 20%;
         float: left;
         margin: 1% 5%;
@@ -252,7 +255,8 @@ html {
 
 @media (max-width: 600px) {
     .mylogo .logo {
-        width: 40%;
+        top: -1%;
+        width: 15%;
         float: left;
         margin: 6% 6%;
     }
