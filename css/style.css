@@ -5,6 +5,7 @@
     src: url(/font/RoseAvenue.ttf) format("truetype");
 }
 
+
 * {
     font-family: RoseAvenue;
 }
