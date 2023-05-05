@@ -1,4 +1,4 @@
-# **Video Editing Showcase b**
+# **Video Editing Showcase**
 
 Demo Link: [Site](https://i476238.hera.fhict.nl/website-challenge-s3/index.html)
 
