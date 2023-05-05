@@ -1,6 +1,6 @@
-# **Video Editing Portfolio**
+# **Video Editing Showcase b**
 
-Hera Link: [Aslanidis Portfolio](https://i476238.hera.fhict.nl/website-challenge-s3/index.html)
+Demo Link: [Site](https://i476238.hera.fhict.nl/website-challenge-s3/index.html)
 
 Homepage Inspiration: [Ziggo Dome Landing Page](https://www.ziggodome.nl/)
 
